@@ -1,0 +1,43 @@
+.header {
+  background-color: white;
+  padding: 24px 16px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $color_whiteblue;
+  position: sticky;
+  top:0;
+  z-index: 3;
+  &__image {
+    position: absolute;
+    top: 18px;
+    left: 72px;
+  }
+  &__menu {
+    display: flex;
+    &__contacts {
+      display: none;
+      margin-right: 20px;
+      & li {
+        padding-left: 16px;
+      }
+      @media (min-width: $width_tablet) {
+        display: flex;
+      }
+    }
+    &__service {
+      display: flex;
+      & li {
+        padding-left: 16px;
+        &:first-child {
+          border-left: 2px solid #eaeaea;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $width_pc) {
+  .header {
+    display: none;
+  }
+}

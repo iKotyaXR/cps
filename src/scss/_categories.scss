@@ -1,0 +1,47 @@
+.categories {
+  display: flex;
+  margin-left: 16px;
+  margin-top: 24px;
+  overflow-x: scroll;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  &__item {
+    margin-right: 16px;
+    & a {
+      transition: $main_transition;
+      display: block;
+      padding: 8px 9px 8px 16px;
+      color: $color_gray;
+      border: 2px solid $color_transparent;
+      &.active {
+        background-color: white;
+        border: 2px solid $color_whiteblue;
+        border-radius: 6px;
+      }
+      &:hover:not(.active) {
+        background-color: white;
+        border: 2px solid $color_whitepink;
+        border-radius: 6px;
+      }
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    background-image: linear-gradient(to right, transparent, $color_whitegray);
+    height: 44px;
+    width: 24px;
+  }
+  @media (min-width: $width_pc) {
+    flex-wrap: wrap;
+  }
+}

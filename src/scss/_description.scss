@@ -1,0 +1,39 @@
+.description {
+  margin: 0px 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #1b1c21;
+  font-weight: lighter;
+  &__text {
+    font-size: 14px;
+
+    @media (min-width: $width_tablet) {
+      max-width: 421px;
+    }
+  }
+  &__link {
+    display: inline-block;
+    margin-top: 16px;
+    font-weight: normal;
+    font-size: 16px;
+    align-items: center;
+    transition: $main_transition;
+
+    &:hover {
+      color: $color_gray;
+    }
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      transform: rotate(-45deg);
+      border-right: 3px solid $color_pink;
+      border-bottom: 3px solid $color_pink;
+      border-radius: 1px;
+      position: relative;
+      margin-left: 5px;
+      transition: $main_transition;
+    }
+  }
+}

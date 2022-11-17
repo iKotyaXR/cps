@@ -1,0 +1,18 @@
+.title {
+  display: flex;
+  font-family: "TTLakes";
+  font-weight: light;
+  font-size: 28px;
+  padding-left: 16px;
+  margin-top: 24px;
+  color: $color_black;
+  &::before {
+    content: "";
+    display: block;
+    position: relative;
+    border-left: 8px solid $color_blue;
+    border-radius: 20px;
+    height: 40px;
+    left: -20px;
+  }
+}

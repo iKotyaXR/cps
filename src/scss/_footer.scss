@@ -1,0 +1,30 @@
+.footer {
+  color: $color_gray;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-top: 1px solid $color_whiteblue;
+  font-size: 14px;
+  margin: 16px 16px 0px 16px;
+  &__text {
+    display: block;
+    margin-top: 16px;
+    &:last-child {
+      margin-bottom: 16px;
+    }
+  }
+
+  @media (min-width: $width_tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    &__text {
+      max-width: 33%;
+      &:first-child {
+        text-align: left;
+      }
+      &:last-child {
+        text-align: right;
+      }
+    }
+  }
+}

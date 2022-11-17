@@ -1,0 +1,9 @@
+.blur {
+  display: none;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100vw;
+  background: rgba(white, $alpha: 0.9);
+  z-index: 10;
+}

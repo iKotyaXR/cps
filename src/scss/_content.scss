@@ -1,0 +1,53 @@
+.content {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: $color_black;
+  display: flex;
+  flex-direction: column;
+  &__container {
+    margin: 0px 16px;
+    &__text {
+      display: flex;
+      overflow: hidden;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.2px;
+      color: $color_black;
+      max-height: 110px;
+      margin-bottom: 16px;
+      font-weight: 300;
+      transition: $main_transition;
+    }
+    &__button {
+      display: flex;
+      transition: $main_transition;
+
+      &:hover {
+        color: $color_gray;
+      }
+    }
+    @media (min-width: $width_tablet) {
+      max-width: 50%;
+      padding-right: 48px;
+    }
+  }
+
+  &__image {
+    margin-top: 16px;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    @media (min-width: $width_tablet) {
+      border-radius: 8px;
+      margin-right: 24px;
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: $width_tablet) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}

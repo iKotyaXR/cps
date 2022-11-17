@@ -1,0 +1,36 @@
+.equipment {
+  transition: max-height transform $main_transition;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 160px;
+    padding: 16px;
+    margin-top: 16px;
+    background-color: white;
+    border: 1px solid $color_lightgray;
+    border-radius: 6px;
+
+    &__button {
+      margin-left: auto;
+    }
+    &--hiden {
+      width: 240px;
+    }
+
+    @media (min-width: $width_tablet) {
+      max-width: 240px;
+    }
+  }
+
+  &.opened {
+    max-height: 540px;
+  }
+
+  @media (min-width: $width_tablet) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1080px;
+    max-height: 180px;
+  }
+}

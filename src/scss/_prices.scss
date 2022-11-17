@@ -1,0 +1,92 @@
+.prices {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 0px 16px 16px 16px;
+    border-radius: 6px;
+    @media (min-width: $width_tablet) {
+      display: table;
+    }
+    &__name {
+      margin-top: 16px;
+      font-size: 14px;
+      color: $color_gray;
+      font-weight: normal;
+
+      @media (min-width: $width_tablet) {
+        display: none;
+      }
+    }
+    &__description {
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.2px;
+      font-weight: normal;
+      color: #1b1c21;
+      @media (min-width: $width_tablet) {
+        display: table-cell;
+        padding: 24px 0;
+        &:nth-of-type(1) {
+          width: 53%;
+        }
+        &:nth-of-type(2) {
+          width: 15%;
+        }
+        &:nth-of-type(3) {
+          width: 12%;
+        }
+      }
+    }
+    &__button {
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+      @media (min-width: $width_tablet) {
+        right: 16px;
+      }
+    }
+
+    @media (min-width: $width_tablet) {
+      padding: 0;
+      background-color: $color_transparent;
+      &:not(:last-of-type) {
+        border-bottom: 1px solid $color-lightgray;
+        border-radius: 0;
+      }
+    }
+  }
+
+  @media (min-width: $width_tablet) {
+    display: block;
+    padding: 0px 16px;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid $color_transparent;
+    width: auto;
+  }
+}
+
+.table {
+  display: none;
+
+  @media (min-width: $width_tablet) {
+    display: table;
+    width: 100%;
+    padding: 0px 16px 16px 16px;
+    color: $color_gray;
+    font-size: 16px;
+    &__cell {
+      display: table-cell;
+      &:nth-of-type(1) {
+        width: 53%;
+      }
+      &:nth-of-type(2) {
+        width: 15%;
+      }
+      &:nth-of-type(3) {
+        width: 12%;
+      }
+    }
+  }
+}

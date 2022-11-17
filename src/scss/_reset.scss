@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+a,
+:active,
+a:active {
+  outline: none;
+  color: inherit;
+}
+
+body,
+html {
+  background-color: #f8f8f8;
+  font-family: "TTLakes";
+  font-weight: 500;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  background: none;
+}
