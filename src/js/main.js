@@ -104,7 +104,7 @@ let close_menu_button = document.querySelector("#menu-close");
 let close_feedback_button = document.querySelector("#feedback-close");
 let close_phone_button = document.querySelector("#call-close");
 let menu = document.querySelector(".left-menu");
-let feedback = document.querySelector("#feedback");
+let feedback = document.querySelector("#feedback1");
 let phone = document.querySelector("#call");
 
 burger_button.addEventListener("click", () => {
