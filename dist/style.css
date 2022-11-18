@@ -640,6 +640,9 @@ body {
           text-align: left; }
         .footer__text:last-child {
           text-align: right; } }
+  @media (min-width: 1120px) {
+    .footer {
+      margin-left: 340px; } }
 
 .blur {
   display: none;
