@@ -183,6 +183,9 @@ function openFeedback() {
 function openPhone() {
   if (window.innerWidth >= 768) {
     phone.style.right = "0px";
+    // phone.children[0].focus()
+    console.log(phone.children[0])
+    console.log("TRUEE EEDED")
     blur.style.display = "block";
     blur.style.zIndex = "14";
   } else {
